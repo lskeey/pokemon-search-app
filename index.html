@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokémon Search App</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+    </style>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <main>
+      <img
+        class="logo"
+        src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg"
+        alt="Pokémon logo"
+      />
+
+      <fieldset>
+        <label for="search-input">Search for Pokémon Name or ID:</label>
+        <input required type="text" id="search-input" />
+        <button type="button" id="search-button">Search</button>
+      </fieldset>
+
+      <div id="output" class="output">
+        <div class="details-container">
+          <img src="" alt="" id="sprite" />
+          <div class="pokemon-details">
+            <div class="pokemon-id-name">
+              <span id="pokemon-id"></span>
+              <span id="pokemon-name"></span>
+            </div>
+            <div id="types" class="types"></div>
+            <p id="weight"></p>
+            <p id="height"></p>
+            <p class="stats-title">Stats</p>
+            <div class="stats-container">
+              <p>HP: <span id="hp"></span></p>
+              <p>Sp.ATK: <span id="special-attack"></span></p>
+              <p>ATK: <span id="attack"></span></p>
+              <p>Sp.DEF: <span id="special-defense"></span></p>
+              <p>DEF: <span id="defense"></span></p>
+              <p>Speed: <span id="speed"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
